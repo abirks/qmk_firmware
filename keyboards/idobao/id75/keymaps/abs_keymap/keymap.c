@@ -52,7 +52,7 @@ bool vold_mute(keyrecord_t *record, bool *registered) {
         if (mod_state & MOD_MASK_SHIFT) {
             clear_mods();
             send_keyboard_report();
-            wait_ms(1); // Workaround
+            wait_ms(10); // Workaround
             register_code(KC_MUTE);
             set_mods(mod_state);
             *registered = true;
