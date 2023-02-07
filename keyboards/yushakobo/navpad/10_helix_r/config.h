@@ -17,7 +17,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#include "config_common.h"
 
 /* key matrix size */
 #define MATRIX_ROWS 12
@@ -90,12 +89,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #endif
 
-/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 5
-
-/* define if matrix has ghost (lacks anti-ghosting diodes) */
-//#define MATRIX_HAS_GHOST
-
 /* disable action features */
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
@@ -106,6 +99,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define BOOTMAGIC_LITE_COLUMN 0
 
 
-#define TAPPING_FORCE_HOLD
+#define QUICK_TAP_TERM 0
 #define TAPPING_TERM 132
 #define TAPPING_LAYER_TERM 90
