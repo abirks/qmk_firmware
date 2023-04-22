@@ -2,6 +2,7 @@
   "keyboard_name": "ID75",
   "manufacturer": "IDOBAO",
   "url": "",
+  "board": "STM32_F103_STM32DUINO",
   "maintainer": "qmk",
   "usb": {
     "vid": "0x6964",
@@ -12,8 +13,8 @@
     "pin": "B7",
     "breathing": true
   },
-  "processor": "atmega32u4",
-  "bootloader": "atmel-dfu",
+  "processor": "STM32F103",
+  "bootloader": "stm32duino",
   "community_layouts": ["ortho_5x15"],
   "layouts": {
       "LAYOUT_ortho_5x15": {
